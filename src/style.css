@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap');
 
-/* ── CSS Variables ── */
+/* ini yg bakal dipake */
 :root {
   --cream: #FAF7F2;
   --ink: #1C1A16;
@@ -34,7 +34,6 @@
   --input-bg: #2C2A27;
 }
 
-/* ── Reset ── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -50,7 +49,6 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* ── Header ── */
 .header {
   text-align: center;
   margin-bottom: 32px;
@@ -91,7 +89,7 @@ body {
 
 .dark-toggle:hover { transform: scale(1.1); }
 
-/* ── Tabs ── */
+/* tab */
 .tabs {
   display: flex;
   gap: 8px;
@@ -122,7 +120,7 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
-/* ── Shared card ── */
+/* cards */
 .card {
   background: var(--card-bg);
   border-radius: var(--radius);
@@ -131,7 +129,7 @@ body {
   padding: 14px 16px;
 }
 
-/* ── Notes ── */
+/* notes */
 .add-note-area {
   background: var(--card-bg);
   border-radius: var(--radius);
@@ -252,7 +250,7 @@ body {
 
 .btn-icon:hover { color: var(--terracotta); }
 
-/* Edit note inline */
+/* edit etc */
 .note-edit-input,
 .note-edit-textarea {
   width: 100%;
@@ -296,7 +294,7 @@ body {
   cursor: pointer;
 }
 
-/* ── Checklist ── */
+/* checklist */
 .add-checklist-row {
   display: flex;
   gap: 8px;
@@ -484,7 +482,7 @@ body {
   padding-bottom: 2px;
 }
 
-/* ── Empty state ── */
+/* kosongan */
 .empty-state {
   text-align: center;
   padding: 40px 20px;
@@ -499,7 +497,7 @@ body {
   display: block;
 }
 
-/* ── Popup ── */
+/* popup */
 .popup-overlay {
   position: fixed;
   inset: 0;
@@ -559,7 +557,7 @@ body {
 
 .popup-close:hover { opacity: 0.85; }
 
-/* ── Confetti ── */
+/* confetti */
 .confetti-wrap {
   position: fixed;
   inset: 0;
@@ -575,7 +573,7 @@ body {
   border-radius: 2px;
 }
 
-/* ── Animations ── */
+/* animasi */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }

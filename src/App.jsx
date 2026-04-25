@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 import Notes from "./components/Notes";
 import Checklist from "./components/Checklist";
 import Popup from "./components/Popup";
-import "./App.css";
+import "./style.css";
+
+// icons
+import { WiDaySunny } from 'react-icons/wi';
+import { MdNightlight } from 'react-icons/md';
 
 export default function App() {
   const [tab, setTab] = useState("notes");
@@ -28,7 +32,7 @@ export default function App() {
           onClick={() => setDarkMode(!darkMode)}
           title="Toggle dark mode"
         >
-          {darkMode ? "☀️" : "🌙"}
+          {darkMode ? <WiDaySunny /> : <MdNightlight />}
         </button>
       </header>
 

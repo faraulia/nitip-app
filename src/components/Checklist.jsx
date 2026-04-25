@@ -107,7 +107,7 @@ export default function Checklist({ onComplete }) {
 
       {checks.length === 0 ? (
         <div className="empty-state">
-          <span className="big-emoji">✅</span>
+          {/* <span className="big-emoji">✅</span> */}
           Belum ada tugas. Ayo mulai!
         </div>
       ) : (

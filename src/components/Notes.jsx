@@ -69,7 +69,7 @@ export default function Notes() {
 
       {notes.length === 0 ? (
         <div className="empty-state">
-          <span className="big-emoji">📝</span>
+          {/* <span className="big-emoji">📝</span> */}
           Belum ada catatan. Tulis sesuatu!
         </div>
       ) : (
