@@ -24,6 +24,11 @@ export default function App() {
     <div className="app">
       <header className="header">
         <div className="logo">
+          <img 
+            src="https://tr.rbxcdn.com/180DAY-30061f2698fa6a6b13d1285f648a4c24/420/420/BackAccessory/Webp/noFilter" 
+            alt="logo"
+            style={{ width: "44px", height: "44px", verticalAlign: "middle", marginRight: "0px" }}
+          />
           Niti<span>p</span>
         </div>
         <p className="tagline">catatan & checklist harianmu</p>

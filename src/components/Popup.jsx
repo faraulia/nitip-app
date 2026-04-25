@@ -33,11 +33,15 @@ export default function Popup({ onClose }) {
       <div className="confetti-wrap" ref={confettiRef} />
       <div className="popup-overlay" onClick={onClose}>
         <div className="popup" onClick={(e) => e.stopPropagation()}>
-          <span className="popup-emoji">🎉</span>
+          <img 
+            src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzd6anM0NGphM3E5bDUzdTdvc253anBpZTY3dnNidjgwNHBjbHFmMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rrasLFSTyi4Th1e8Xo/giphy.gif" 
+            alt="happycat"
+            style={{ width: "240px", borderRadius: "12px" }}
+          />
           <div className="popup-title">yey akhirnya selesai!</div>
-          <div className="popup-sub">u did well, keren banget!</div>
+          <div className="popup-sub">u did well, kamu keren bangett</div>
           <button className="popup-close" onClick={onClose}>
-            Makasih!
+            yippie!
           </button>
         </div>
       </div>

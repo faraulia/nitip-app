@@ -1,6 +1,9 @@
 import { useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 
+import { MdEditNote } from 'react-icons/md';
+import { IoClose } from 'react-icons/io5';
+
 export default function Notes() {
   const [notes, setNotes] = useLocalStorage("nitip_notes", []);
   const [titleInput, setTitleInput] = useState("");
@@ -62,7 +65,7 @@ export default function Notes() {
         />
         <div className="add-row">
           <button className="btn-primary" onClick={addNote}>
-            Simpan catatan
+            Simpan
           </button>
         </div>
       </div>
@@ -103,10 +106,10 @@ export default function Notes() {
                 <>
                   <div className="note-actions">
                     <button className="btn-icon" onClick={() => startEdit(note)} title="Edit">
-                      ✏️
+                      <MdEditNote size={18} />
                     </button>
                     <button className="btn-icon" onClick={() => deleteNote(note.id)} title="Hapus">
-                      ×
+                      <IoClose size={16} />
                     </button>
                   </div>
                   <div className="note-title">{note.title}</div>

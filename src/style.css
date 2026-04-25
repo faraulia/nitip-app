@@ -89,6 +89,10 @@ body {
 
 .dark-toggle:hover { transform: scale(1.1); }
 
+.dark-toggle svg {
+  color: var(--ink);
+}
+
 /* tab */
 .tabs {
   display: flex;

@@ -1,12 +1,16 @@
 import { useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 
+import { MdEdit } from 'react-icons/md';
+import { IoClose } from 'react-icons/io5';
+
 function formatDeadline(dateStr) {
   if (!dateStr) return null;
-  const d = new Date(dateStr);
+  const [year, month, day] = dateStr.split("-").map(Number);
+  const deadline = new Date(year, month - 1, day); // lokal
   const now = new Date();
   now.setHours(0, 0, 0, 0);
-  const diff = Math.ceil((d - now) / (1000 * 60 * 60 * 24));
+  const diff = Math.ceil((deadline - now) / (1000 * 60 * 60 * 24));
   if (diff < 0) return { label: `Terlambat ${Math.abs(diff)} hari`, overdue: true };
   if (diff === 0) return { label: "Deadline hari ini!", overdue: true };
   if (diff === 1) return { label: "Deadline besok", overdue: false };
@@ -107,7 +111,6 @@ export default function Checklist({ onComplete }) {
 
       {checks.length === 0 ? (
         <div className="empty-state">
-          {/* <span className="big-emoji">✅</span> */}
           Belum ada tugas. Ayo mulai!
         </div>
       ) : (
@@ -166,10 +169,10 @@ export default function Checklist({ onComplete }) {
                 {editingId !== item.id && (
                   <div style={{ display: "flex", gap: 4 }}>
                     <button className="btn-icon" onClick={() => startEdit(item)} title="Edit">
-                      ✏️
+                      <MdEdit size={16} />
                     </button>
                     <button className="btn-icon" onClick={() => deleteCheck(item.id)} title="Hapus">
-                      ×
+                      <IoClose size={16} />
                     </button>
                   </div>
                 )}
