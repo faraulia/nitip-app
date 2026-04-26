@@ -47,6 +47,8 @@ body {
   min-height: 100vh;
   padding: 24px 16px 24px;
   transition: background 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
