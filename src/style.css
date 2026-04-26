@@ -45,7 +45,7 @@ body {
   background: var(--cream);
   color: var(--ink);
   min-height: 100vh;
-  padding: 24px 16px 80px;
+  padding: 24px 16px 24px;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -596,4 +596,13 @@ body {
 @keyframes confettiFall {
   0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
   100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+
+/* footer */
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-faint);
+  font-weight: 300;
 }

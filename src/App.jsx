@@ -60,6 +60,11 @@ export default function App() {
       {tab === "checklist" && <Checklist onComplete={() => setShowPopup(true)} />}
 
       {showPopup && <Popup onClose={() => setShowPopup(false)} />}
+    
+      <footer className="footer">
+        <p>© 2026 faraulia</p>
+      </footer>
+    
     </div>
   );
 }
