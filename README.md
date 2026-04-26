@@ -1,12 +1,23 @@
-Nitip Tugas: catatan & checklist harianmu
-https://nitip-app.vercel.app/
+# Nitip Tugas
 
-Tech stack: React + Vite, CSS, React Icons, localStorage
+Catatan & checklist harianmu
 
-How to run after clone?
+🔗 https://nitip-app.vercel.app/
+
+---
+
+## Tech Stack
+- React + Vite
+- CSS
+- React Icons
+- localStorage
+
+---
+
+## How to Run?
+
+```bash
 git clone https://github.com/faraulia/nitip-app.git
 cd nitip-app
 npm install
 npm run dev
-
-Made with <3 by faraulia
